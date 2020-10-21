@@ -103,9 +103,9 @@ describe('inspect', function () {
       return inspect(successPath)
     })
 
-    it('Should respect --debug-brk nodeArg.', function (done) {
+    it('Should respect --inspect-brk nodeArg.', function (done) {
       const inspected = inspect(successPath, {
-        nodeArgs: ['--debug-brk']
+        nodeArgs: ['--inspect-brk']
       })
 
       inspected.devtools.onOpen = function () {
